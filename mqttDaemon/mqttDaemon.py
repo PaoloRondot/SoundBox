@@ -92,7 +92,7 @@ def on_connect(client, userdata, flags, rc):
 # The callback for when a PUBLISH message is received from the server.
 def on_message(client, userdata, msg):
     print(msg.topic+" "+str(msg.payload))
-    
+
     if msg.topic == TOPIC_BUTTONS:
         play_button(msg.payload)
     elif msg.topic == TOPIC_UPDATE_PAD:
@@ -103,6 +103,9 @@ def on_message(client, userdata, msg):
 with open('../soundPad.txt', 'r') as f:
     lines = f.read()
 attribution = json.loads(lines)
+
+update_sounds()
+update_pad()
 
 client = mqtt.Client(transport='websockets')
 client.tls_set()
