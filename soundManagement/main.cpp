@@ -2,6 +2,16 @@
 #include <string>
 #include <map>
 
+/**
+ * @brief Ce programme permet de muter les stream audios en arrière-plan 
+ * et de jouer le son dont le titre est donné en paramètre 
+ * 
+ * @param argc titre de la musique et volume auquel elle doit être amenée
+ * @author Paolo RONDOT - paolo.rondot@gmail.com
+ * @version 1
+ * @date 19/07/2022
+ */
+
 int main(int argc, char *argv[])
 {
 	FILE *fp;
@@ -12,7 +22,6 @@ int main(int argc, char *argv[])
  	if (fp == NULL) {
  		printf("Failed to run command\n" );
   	}
-
   	/* Read the output a line at a time - output it. */
 	std::string answer;
   	while (fgets(path, sizeof(path), fp) != NULL) {
@@ -32,15 +41,16 @@ int main(int argc, char *argv[])
 		while(answer[found+1]>47 && answer[found+1]<58)
 			id+=answer[++found];
 		found = answer.find("front-left: ", found);
-		vol += answer[found+12];
-		found += 12;
-		while(answer[found+1]>47 && answer[found+1]<58)
+		found = answer.find("/", found);
+		found += 1;
+		vol += answer[found];
+		while(answer[found+1] != '/')
 			vol += answer[++found];
 		volumes[id] = vol;
 	}
 	for(auto itr = volumes.begin(); itr != volumes.end(); ++itr){
 		std::cout<<itr->first<<": "<<itr->second<<std::endl;
-		std::string volumeCmd = "pacmd set-sink-input-volume ";
+		std::string volumeCmd = "pactl set-sink-input-volume ";
 		volumeCmd += itr->first;
 		volumeCmd += " ";
 		volumeCmd += argv[2];
@@ -53,7 +63,7 @@ int main(int argc, char *argv[])
 	system(playSound.c_str());
 	for(auto itr = volumes.begin(); itr != volumes.end(); ++itr){
 		std::cout<<itr->first<<": "<<itr->second<<std::endl;
-		std::string volumeCmd = "pacmd set-sink-input-volume ";
+		std::string volumeCmd = "pactl set-sink-input-volume ";
 		volumeCmd += itr->first;
 		volumeCmd += " ";
 		volumeCmd += itr->second;

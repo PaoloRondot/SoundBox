@@ -5,19 +5,47 @@ import json
 import requests
 import base64
 
+# Paolo RONDOT - paolo.rondot@gmail.com
+# Version 1
+# 20/07/2022
 
-IDUSER = os.environ['IDUSER']
+# IDUSER = os.environ['IDUSER']
+IDUSER = "62016992f2b98c053da46e93"
  
 MQTT_SERVER = "test.mosquitto.org" #specify the broker address, it can be IP of raspberry pi or simply localhost
 MQTT_PORT = 8081
-# MQTT_SERVER_2 = "wss://test.mosquitto.org:8081"
 TOPIC_BUTTONS = "mqtt-buttonNumberClicked/" + IDUSER
 TOPIC_UPDATE_PAD = "mqtt-updateTable/" + IDUSER
 TOPIC_UPDATE_SOUNDS = "mqtt-updateSon/" + IDUSER
 MQTT_PATH = "test_channel_Pao" #this is the name of topic, like temp
 URL_COMMUN = "https://noirc01.herokuapp.com/api/"
 
+def is_cnx_active(timeout):
+    """Cette fonction permet de détecter si la raspberry est connectée à l'internet"""
+
+    try:
+        requests.head("http://www.google.com/", timeout=timeout)
+        return True
+    except requests.ConnectionError:
+        return False
+
+def wait_for_connection():
+    """Cette fonction boucle tant qu'une connection à internet n'est pas active"""
+
+    while True:
+        if is_cnx_active(1) is True:
+            # Do somthing
+            print("The internet connection is active")
+            break
+        else:
+            pass
+
 def update_sounds():
+    """Cette fonction permet de télécharger un son s'il est ajouté sur la bibliothèque en ligne
+    de l'utilisateur. Il supprime également les sons existant sur la raspberry et pas en ligne"""
+
+    wait_for_connection()
+    print("update sound")
     # Fetch all sound ids
     url = URL_COMMUN + "audios/getAllWithoutDatas/" + IDUSER
     response = requests.get(url)
@@ -26,7 +54,7 @@ def update_sounds():
     rep_json = response.json()
 
     # Fetch all sound memory
-    dir_list = os.listdir("../../sounds")
+    dir_list = os.listdir("/home/pi/sounds")
 
     online = list()
     print(dir_list)
@@ -58,29 +86,37 @@ def update_sounds():
     for item in dir_list:
         if item not in online:
             print("removing sound " + item)
-            os.remove("../../sounds/" + item)
+            os.remove("/home/pi/sounds/" + item)
 
 
 def play_button(button):
-    cmd = "(cd /home/pi/soundbox/soundManagement/ && ./a.out " + attribution[button] + " 0)"
+    """Cette fonction joue la musique attribué au bouton cliqué"""
+
+    with open('/home/pi/soundbox/soundPad.txt', 'r') as f:
+        lines = f.read()
+    attribution = json.loads(lines)
+    cmd = "(cd /home/pi/soundbox/soundManagement/ && ./a.out " + attribution[button[2:len(button)-1]] + " 0)"
     print(cmd)
     os.system(cmd)
 
 
-
 def update_pad():
+    """Cette fonction met à jour la table d'attribution (pad)"""
+
+    wait_for_connection()
     url = URL_COMMUN + "songPad/getAll/" + IDUSER
     response = requests.get(url)
     if response.status_code != 200:
         print ("Error:", response.status_code)
     rep_text = response.text
-    attribution = response.json()
-    with open('../soundPad.txt', 'w') as f:
+    with open('/home/pi/soundbox/soundPad.txt', 'w') as f:
         f.write(rep_text)
 
 
 # The callback for when the client receives a CONNACK response from the server.
 def on_connect(client, userdata, flags, rc):
+    """Callback appelé à la connection de la raspberry sur le serveur MQTT"""
+
     print("Connected with result code "+str(rc))
  
     # Subscribing in on_connect() means that if we lose the connection and
@@ -91,22 +127,20 @@ def on_connect(client, userdata, flags, rc):
  
 # The callback for when a PUBLISH message is received from the server.
 def on_message(client, userdata, msg):
+    """Callback appelé lorsqu'un message est reçu sur un topic"""
+
     print(msg.topic+" "+str(msg.payload))
 
     if msg.topic == TOPIC_BUTTONS:
-        play_button(msg.payload)
+        play_button(str(msg.payload))
     elif msg.topic == TOPIC_UPDATE_PAD:
         update_pad()
     elif msg.topic == TOPIC_UPDATE_SOUNDS:
         update_sounds()
 
-with open('../soundPad.txt', 'r') as f:
-    lines = f.read()
-attribution = json.loads(lines)
-
 update_sounds()
 update_pad()
-
+wait_for_connection()
 client = mqtt.Client(transport='websockets')
 client.tls_set()
 client.on_connect = on_connect
