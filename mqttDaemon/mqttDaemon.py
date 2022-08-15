@@ -9,6 +9,8 @@ import base64
 # Version 1
 # 20/07/2022
 
+# TODO Faire en sorte depuis le service de lancement au boot que l'on ait accès à la variable d'environnement IDUSER
+
 # IDUSER = os.environ['IDUSER']
 IDUSER = "62016992f2b98c053da46e93"
  
@@ -16,7 +18,7 @@ MQTT_SERVER = "test.mosquitto.org" #specify the broker address, it can be IP of 
 MQTT_PORT = 8081
 TOPIC_BUTTONS = "mqtt-buttonNumberClicked/" + IDUSER
 TOPIC_UPDATE_PAD = "mqtt-updateTable/" + IDUSER
-TOPIC_UPDATE_SOUNDS = "mqtt-updateSon/" + IDUSER
+TOPIC_UPDATE_SOUNDS = "mqtt-updateSong/" + IDUSER
 MQTT_PATH = "test_channel_Pao" #this is the name of topic, like temp
 URL_COMMUN = "https://noirc01.herokuapp.com/api/"
 
