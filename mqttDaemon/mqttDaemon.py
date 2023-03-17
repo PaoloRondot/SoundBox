@@ -8,14 +8,16 @@ import multiprocessing
 import random
 import time
 import RPi.GPIO as GPIO
+import datetime
+import pyttsx3
+
+engine = pyttsx3.init()
 
 # Paolo RONDOT - paolo.rondot@gmail.com
 # Version 1
 # 20/07/2022
 
 # TODO Faire en sorte depuis le service de lancement au boot que l'on ait accès à la variable d'environnement IDUSER
-
-master, slave = os.openpty()
 
 # IDUSER = os.environ['IDUSER']
 IDUSER = "63f9f9b37f4e9cd59bd826f2"
@@ -50,6 +52,8 @@ random_bool = True
 event = multiprocessing.Event()
 queue = multiprocessing.Queue()
 
+receiver, sender = multiprocessing.Pipe()
+
 BOUTON1 = 17
 BOUTON2 = 27
 BOUTON3 = 22
@@ -65,6 +69,13 @@ GPIO.setup(BOUTON3, GPIO.IN, pull_up_down=GPIO.PUD_DOWN)
 GPIO.setup(BOUTON4, GPIO.IN, pull_up_down=GPIO.PUD_DOWN)
 GPIO.setup(BOUTON5, GPIO.IN, pull_up_down=GPIO.PUD_DOWN)
 GPIO.setup(BOUTON6, GPIO.IN, pull_up_down=GPIO.PUD_DOWN)
+
+now = datetime.datetime.now()
+
+file = open("/home/pi/SoundBox/logs.txt", "a")
+file.write("\n\n\n\n\n----------------------" + str(now) + "----------------------")
+file.write("\n")
+file.close()
 
 def is_cnx_active(timeout):
     """Cette fonction permet de détecter si la raspberry est connectée à l'internet"""
@@ -153,34 +164,64 @@ def download_sound(id_sound, button):
 
 
 
-def run_playlist(button):
+def run_playlist(button, receiver):
     # dir_list = os.listdir("/home/pi/sounds/" + button)
+    # master, slave = os.openpty()
     playlist_sort = playlist[button]
     if random_bool:
         random.shuffle(playlist_sort)
     for song in playlist_sort:
+        file = open("/home/pi/SoundBox/logs.txt", "a")
+        file.write("\n### in run_playlist() ###\n")
         command = "mpg123 /home/pi/sounds/" + button + '/' + song
         song_path = "/home/pi/sounds/" + button + '/' + song
+        command_try = "LOAD " + song_path + "\n"
+        print(command_try)
         print("command: " + command)
+        file.write("\tcommand: " + command + "\n")
+        file.close()
         # os.system(command)
-        # process = subprocess.Popen(["/usr/bin/mpg123", song_path], stdout=subprocess.PIPE, stdin=subprocess.PIPE, stderr=subprocess.PIPE)
-        process = subprocess.Popen(["/usr/bin/mpg123", song_path], stdin=master)
+        process = subprocess.Popen(["/usr/bin/mpg123", "-R", song_path], stdout=None, stdin=subprocess.PIPE, stderr=None)
+        # time.sleep(1.0)
+        process.stdin.write(bytes(command_try, 'utf-8'))
+        process.stdin.flush()
+        # process = subprocess.Popen(["/usr/bin/mpg123", song_path], stdin=master)
         # process = subprocess.run(command, capture_output=True, text=True)
         i = 0
         while process.poll() is None:
             i += 1
             if i == 100000:
+                file = open("/home/pi/SoundBox/logs.txt", "a")
+                file.write("\n### in run_playlist() ###\n\tplaying\n")
+                file.close()
                 print("running2")
                 i = 0
             # print("hello")
             if event.is_set():
+                print("terminating process")
                 process.terminate()
-            if not queue.empty():
-                comm = queue.get()
+                break
+            # if not queue.empty():
+            #     comm = queue.get()
+            #     if comm is not None:
+            #         # if item == "pause":
+            #         print("sending s")
+            #         os.write(slave, b's')
+            #         # process.communicate(input = b's')
+            if receiver.poll():
+                comm = receiver.recv()
                 if comm is not None:
                     # if item == "pause":
+                    file = open("/home/pi/SoundBox/logs.txt", "a")
+                    file.write("\n### in run_playlist() ###\n\tsending s")
+                    file.close()
                     print("sending s")
-                    os.write(slave, b's')
+                    process.stdin.write(b"PAUSE\n")
+                    process.stdin.flush()
+                    # process.stdin.flush()
+                    # process.stdin.write(b"s\n")
+                    # process.stdin.flush()
+                    # os.write(slave, b's')
                     # process.communicate(input = b's')
         if event.is_set():
             break
@@ -189,8 +230,11 @@ def run_playlist(button):
 
 def play_button(button):
     """Cette fonction joue la musique attribué au bouton cliqué"""
-
-    process = multiprocessing.Process(target=run_playlist, kwargs={"button":button})
+    global receiver
+    file = open("/home/pi/SoundBox/logs.txt", "a")
+    file.write("\n\t --- playing_button ---")
+    file.close()
+    process = multiprocessing.Process(target=run_playlist, kwargs={"button":button, "receiver":receiver})
     process.start()
     status_player = PLAY
     print("process started")
@@ -252,9 +296,13 @@ def on_message(client, userdata, msg):
     """Callback appelé lorsqu'un message est reçu sur un topic"""
     global status_player
     global current_playlist
+    global sender
 
     print(msg.topic+" "+str(msg.payload))
-    print({type(msg.payload)})
+
+    file = open("/home/pi/SoundBox/logs.txt", "a")
+    file.write("\n\n\n---- MQTT - Received message ---\n\t" + msg.topic+" "+str(msg.payload))
+    file.close()
 
     if msg.topic == TOPIC_RANDOM_P:
         if str(msg.payload).find("true") != -1:
@@ -269,15 +317,24 @@ def on_message(client, userdata, msg):
             print("status_player: " + str(status_player))
             print("current_playlist: " + current_playlist)
             print("playlist_msg: " + playlist_msg)
-
+            file = open("/home/pi/SoundBox/logs.txt", "a")
+            file.write("\n\t" + "status_player: " + str(status_player) + "\n\t" + "current_playlist: " + current_playlist + "\n\t" + "playlist_msg: " + playlist_msg)
+            file.close()
             if current_playlist == playlist_msg:
                 if status_player == STOP:
                     status_player = PLAY
                     event.clear()
                     play_button("button" + str(int(playlist_msg)+1))
+                    file = open("/home/pi/SoundBox/logs.txt", "a")
+                    file.write("\n\t\t --- play_beg ---")
+                    file.close()
                 elif status_player == PAUSE:
                     status_player = PLAY
-                    queue.put("play")
+                    sender.send("play")
+                    file = open("/home/pi/SoundBox/logs.txt", "a")
+                    file.write("\n\t\t --- play ---")
+                    file.close()
+                    # queue.put("play")
 
             else: 
                 current_playlist = playlist_msg
@@ -292,12 +349,22 @@ def on_message(client, userdata, msg):
             print("status_player: " + str(status_player))
             if status_player == PLAY:
                 status_player = PAUSE
+                file = open("/home/pi/SoundBox/logs.txt", "a")
+                file.write("\n\t\t --- pausing ---")
+                file.close()
                 print("pausing")
-                queue.put("pause")
+                sender.send("pause")
+                # queue.put("pause")
             # event.set()
     # elif msg.topic == TOPIC_UPDATE_SOUNDS:
     #     update_sounds()
+    file = open("/home/pi/SoundBox/logs.txt", "a")
+    file.write("\n")
+    file.close()
 
+engine.say("Connecting to network")
+engine.runAndWait()
+# if __name__ == '__main__':
 update_sounds()
 # play_button("button1")
 # while True:
@@ -320,7 +387,8 @@ client.connect(MQTT_SERVER, MQTT_PORT)
 print(IDUSER)
 # client.loop_forever() #use this line if you don't want to write any further code. It blocks the code forever to check for data
 client.loop_start()  #use this line if you want to write any more code here
-
+engine.say("Successfully connected")
+engine.runAndWait()
 while True:
     time.sleep(0.1)
     button_pressed = False
@@ -360,12 +428,14 @@ while True:
 
             elif status_player == PAUSE:
                 status_player = PLAY
-                queue.put("play")
+                sender.send("play")
+                # queue.put("play")
 
             elif status_player == PLAY:
                 status_player = PAUSE
                 print("pausing")
-                queue.put("pause")
+                sender.send("pause")
+                # queue.put("pause")
         
         else:
             current_playlist = button
