@@ -20,7 +20,7 @@ engine = pyttsx3.init()
 # TODO Faire en sorte depuis le service de lancement au boot que l'on ait accès à la variable d'environnement IDUSER
 
 # IDUSER = os.environ['IDUSER']
-IDUSER = "63f9f9b37f4e9cd59bd826f2"
+IDUSER = "64429949d35dee5ae5c96997"
  
 MQTT_SERVER = "hairdresser.cloudmqtt.com" #specify the broker address, it can be IP of raspberry pi or simply localhost
 MQTT_PORT = 35759
@@ -134,7 +134,6 @@ def update_sounds():
         for song_local in dir_list:
             if song_local not in online:
                 print("removing sound " + song_local)
-                input("wait")
                 os.remove("/home/pi/sounds/" + button_id + '/' + song_local)
         
         playlist[button_id] = online
