@@ -1,0 +1,3950 @@
+2023-03-17 12:49:16.094731
+---- MQTT - Received message
+playPlaylist/63f9f9b37f4e9cd59bd826f2 b'0/false'
+	 --- playing_button ---
+---- MQTT - Received message
+playPlaylist/63f9f9b37f4e9cd59bd826f2 b'0/true'
+status_player: 0
+current_playlist: 
+playlist_msg: 0
+---- MQTT - Received message
+playPlaylist/63f9f9b37f4e9cd59bd826f2 b'0/false'
+ --- pausing ---2023-03-17 12:56:38.252475
+
+
+
+
+
+----------------------2023-03-17 12:57:40.623859----------------------
+
+	 --- playing_button ---
+---- MQTT - Received message ---
+playPlaylist/63f9f9b37f4e9cd59bd826f2 b'0/true'
+	status_player: 0
+	current_playlist: 
+	playlist_msg: 0
+
+### in run_playlist() ###command: mpg123 /home/pi/sounds/button1/640dbd581a85a932b10dd7d6
+### in run_playlist() ###
+	playing
+### in run_playlist() ###
+	playing
+### in run_playlist() ###
+	playing
+### in run_playlist() ###
+	playing
+### in run_playlist() ###
+	playing
+### in run_playlist() ###
+	playing
+### in run_playlist() ###
+	playing
+### in run_playlist() ###
+	playing
+### in run_playlist() ###
+	playing
+### in run_playlist() ###
+	playing
+### in run_playlist() ###
+	playing
+### in run_playlist() ###
+	playing
+### in run_playlist() ###
+	playing
+### in run_playlist() ###
+	playing
+### in run_playlist() ###
+	playing
+### in run_playlist() ###
+	playing
+### in run_playlist() ###
+	playing
+### in run_playlist() ###
+	playing
+### in run_playlist() ###
+	playing
+### in run_playlist() ###
+	playing
+### in run_playlist() ###
+	playing
+### in run_playlist() ###
+	playing
+### in run_playlist() ###
+	playing
+### in run_playlist() ###
+	playing
+### in run_playlist() ###
+	playing
+### in run_playlist() ###
+	playing
+### in run_playlist() ###
+	playing
+### in run_playlist() ###
+	playing
+### in run_playlist() ###
+	playing
+### in run_playlist() ###
+	playing
+### in run_playlist() ###
+	playing
+### in run_playlist() ###
+	playing
+
+
+
+
+----------------------2023-03-17 13:00:24.079247----------------------
+
+
+
+
+
+----------------------2023-03-17 13:00:42.895041----------------------
+
+---- MQTT - Received message ---
+playPlaylist/63f9f9b37f4e9cd59bd826f2 b'0/false'
+
+
+
+
+
+----------------------2023-03-17 13:01:41.222326----------------------
+
+---- MQTT - Received message ---
+	playPlaylist/63f9f9b37f4e9cd59bd826f2 b'0/true'
+	status_player: 0
+	current_playlist: 
+	playlist_msg: 0
+	 --- playing_button ---
+
+### in run_playlist() ###
+command: mpg123 /home/pi/sounds/button1/640dbd561a85a932b10dd7ca
+### in run_playlist() ###
+	playing
+### in run_playlist() ###
+	playing
+### in run_playlist() ###
+	playing
+### in run_playlist() ###
+	playing
+### in run_playlist() ###
+	playing
+### in run_playlist() ###
+	playing
+### in run_playlist() ###
+	playing
+### in run_playlist() ###
+	playing
+
+
+
+
+----------------------2023-03-17 13:02:30.240306----------------------
+
+---- MQTT - Received message ---
+	playPlaylist/63f9f9b37f4e9cd59bd826f2 b'0/false'
+
+---- MQTT - Received message ---
+	playPlaylist/63f9f9b37f4e9cd59bd826f2 b'0/true'
+	status_player: 0
+	current_playlist: 
+	playlist_msg: 0
+	 --- playing_button ---
+
+### in run_playlist() ###
+	command: mpg123 /home/pi/sounds/button1/640dbd581a85a932b10dd7d6
+
+### in run_playlist() ###
+	playing
+### in run_playlist() ###
+	playing
+### in run_playlist() ###
+	playing
+### in run_playlist() ###
+	playing
+### in run_playlist() ###
+	playing
+### in run_playlist() ###
+	playing
+### in run_playlist() ###
+	playing
+### in run_playlist() ###
+	playing
+### in run_playlist() ###
+	playing
+### in run_playlist() ###
+	playing
+### in run_playlist() ###
+	playing
+### in run_playlist() ###
+	playing
+### in run_playlist() ###
+	playing
+### in run_playlist() ###
+	playing
+### in run_playlist() ###
+	playing
+### in run_playlist() ###
+	playing
+### in run_playlist() ###
+	playing
+### in run_playlist() ###
+	playing
+### in run_playlist() ###
+	playing
+---- MQTT - Received message ---
+	playPlaylist/63f9f9b37f4e9cd59bd826f2 b'0/false'
+		 --- pausing ---
+
+### in run_playlist() ###
+	sending s
+### in run_playlist() ###
+	playing
+### in run_playlist() ###
+	playing
+### in run_playlist() ###
+	playing
+### in run_playlist() ###
+	playing
+---- MQTT - Received message ---
+	playPlaylist/63f9f9b37f4e9cd59bd826f2 b'0/true'
+	status_player: 2
+	current_playlist: 0
+	playlist_msg: 0
+		 --- play ---
+### in run_playlist() ###
+	sending s
+
+### in run_playlist() ###
+	playing
+### in run_playlist() ###
+	playing
+### in run_playlist() ###
+	playing
+### in run_playlist() ###
+	playing
+### in run_playlist() ###
+	playing
+### in run_playlist() ###
+	playing
+### in run_playlist() ###
+	playing
+### in run_playlist() ###
+	playing
+### in run_playlist() ###
+	playing
+### in run_playlist() ###
+	playing
+### in run_playlist() ###
+	playing
+### in run_playlist() ###
+	playing
+### in run_playlist() ###
+	playing
+### in run_playlist() ###
+	playing
+### in run_playlist() ###
+	playing
+### in run_playlist() ###
+	playing
+### in run_playlist() ###
+	playing
+### in run_playlist() ###
+	command: mpg123 /home/pi/sounds/button1/640dbd571a85a932b10dd7ce
+
+### in run_playlist() ###
+	playing
+### in run_playlist() ###
+	playing
+### in run_playlist() ###
+	playing
+### in run_playlist() ###
+	playing
+### in run_playlist() ###
+	playing
+### in run_playlist() ###
+	playing
+### in run_playlist() ###
+	playing
+### in run_playlist() ###
+	playing
+### in run_playlist() ###
+	playing
+### in run_playlist() ###
+	playing
+### in run_playlist() ###
+	playing
+### in run_playlist() ###
+	playing
+### in run_playlist() ###
+	playing
+### in run_playlist() ###
+	playing
+### in run_playlist() ###
+	playing
+
+
+
+
+----------------------2023-03-17 13:08:52.397102----------------------
+
+
+
+---- MQTT - Received message ---
+	playPlaylist/63f9f9b37f4e9cd59bd826f2 b'0/true'
+	status_player: 0
+	current_playlist: 
+	playlist_msg: 0
+	 --- playing_button ---
+
+### in run_playlist() ###
+	command: mpg123 /home/pi/sounds/button1/640dbd561a85a932b10dd7cc
+
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+
+
+---- MQTT - Received message ---
+	playPlaylist/63f9f9b37f4e9cd59bd826f2 b'0/false'
+		 --- pausing ---
+
+### in run_playlist() ###
+	sending s
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+
+
+
+
+----------------------2023-03-17 13:13:12.126367----------------------
+
+
+
+---- MQTT - Received message ---
+	playPlaylist/63f9f9b37f4e9cd59bd826f2 b'0/true'
+	status_player: 0
+	current_playlist: 
+	playlist_msg: 0
+	 --- playing_button ---
+
+### in run_playlist() ###
+	command: mpg123 /home/pi/sounds/button1/640dbd541a85a932b10dd7c8
+
+### in run_playlist() ###
+	playing
+
+
+
+---- MQTT - Received message ---
+	playPlaylist/63f9f9b37f4e9cd59bd826f2 b'0/false'
+		 --- pausing ---
+
+### in run_playlist() ###
+	sending s
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+
+
+
+
+----------------------2023-03-17 13:15:59.721436----------------------
+
+
+
+---- MQTT - Received message ---
+	playPlaylist/63f9f9b37f4e9cd59bd826f2 b'0/true'
+	status_player: 0
+	current_playlist: 
+	playlist_msg: 0
+	 --- playing_button ---
+
+### in run_playlist() ###
+	command: mpg123 /home/pi/sounds/button1/640dbd561a85a932b10dd7cc
+
+### in run_playlist() ###
+	playing
+
+
+
+---- MQTT - Received message ---
+	playPlaylist/63f9f9b37f4e9cd59bd826f2 b'0/false'
+		 --- pausing ---
+
+### in run_playlist() ###
+	sending s
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+
+
+---- MQTT - Received message ---
+	playPlaylist/63f9f9b37f4e9cd59bd826f2 b'0/true'
+	status_player: 2
+	current_playlist: 0
+	playlist_msg: 0
+		 --- play ---
+### in run_playlist() ###
+	sending s
+
+
+
+---- MQTT - Received message ---
+	playPlaylist/63f9f9b37f4e9cd59bd826f2 b'0/true'
+	status_player: 1
+	current_playlist: 0
+	playlist_msg: 0
+
+### in run_playlist() ###
+	playing
+
+
+
+---- MQTT - Received message ---
+	playPlaylist/63f9f9b37f4e9cd59bd826f2 b'0/false'
+		 --- pausing ---
+
+### in run_playlist() ###
+	sending s
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+
+
+
+
+----------------------2023-03-17 13:21:28.948567----------------------
+
+
+
+---- MQTT - Received message ---
+	playPlaylist/63f9f9b37f4e9cd59bd826f2 b'0/true'
+	status_player: 0
+	current_playlist: 
+	playlist_msg: 0
+	 --- playing_button ---
+
+### in run_playlist() ###
+	command: mpg123 /home/pi/sounds/button1/640dbd541a85a932b10dd7c8
+
+
+
+---- MQTT - Received message ---
+	playPlaylist/63f9f9b37f4e9cd59bd826f2 b'0/false'
+		 --- pausing ---
+
+### in run_playlist() ###
+	sending s
+### in run_playlist() ###
+	playing
+
+
+
+
+
+----------------------2023-03-17 13:26:16.276947----------------------
+
+
+
+---- MQTT - Received message ---
+	playPlaylist/63f9f9b37f4e9cd59bd826f2 b'0/true'
+	status_player: 0
+	current_playlist: 
+	playlist_msg: 0
+	 --- playing_button ---
+
+### in run_playlist() ###
+	command: mpg123 /home/pi/sounds/button1/640dbd541a85a932b10dd7c8
+
+
+
+---- MQTT - Received message ---
+	playPlaylist/63f9f9b37f4e9cd59bd826f2 b'0/false'
+		 --- pausing ---
+
+### in run_playlist() ###
+	sending s
+
+
+
+
+----------------------2023-03-17 13:26:51.263833----------------------
+
+
+
+---- MQTT - Received message ---
+	playPlaylist/63f9f9b37f4e9cd59bd826f2 b'0/true'
+	status_player: 0
+	current_playlist: 
+	playlist_msg: 0
+	 --- playing_button ---
+
+### in run_playlist() ###
+	command: mpg123 /home/pi/sounds/button1/640dbd581a85a932b10dd7d6
+
+
+
+---- MQTT - Received message ---
+	playPlaylist/63f9f9b37f4e9cd59bd826f2 b'0/false'
+		 --- pausing ---
+
+### in run_playlist() ###
+	sending s
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+
+
+
+
+----------------------2023-03-17 13:27:28.244128----------------------
+
+
+
+---- MQTT - Received message ---
+	playPlaylist/63f9f9b37f4e9cd59bd826f2 b'0/true'
+	status_player: 0
+	current_playlist: 
+	playlist_msg: 0
+	 --- playing_button ---
+
+### in run_playlist() ###
+	command: mpg123 /home/pi/sounds/button1/640dbd581a85a932b10dd7d8
+
+
+
+---- MQTT - Received message ---
+	playPlaylist/63f9f9b37f4e9cd59bd826f2 b'0/false'
+		 --- pausing ---
+
+### in run_playlist() ###
+	sending s
+### in run_playlist() ###
+	playing
+
+
+
+---- MQTT - Received message ---
+	playPlaylist/63f9f9b37f4e9cd59bd826f2 b'0/true'
+	status_player: 2
+	current_playlist: 0
+	playlist_msg: 0
+		 --- play ---
+
+### in run_playlist() ###
+	sending s
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	command: mpg123 /home/pi/sounds/button1/640dbd581a85a932b10dd7d2
+
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	command: mpg123 /home/pi/sounds/button1/640dbd541a85a932b10dd7c8
+
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	command: mpg123 /home/pi/sounds/button1/640dbd571a85a932b10dd7ce
+
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	command: mpg123 /home/pi/sounds/button1/640dbd581a85a932b10dd7d4
+
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+
+
+
+
+----------------------2023-03-17 13:39:27.023490----------------------
+
+
+
+---- MQTT - Received message ---
+	playPlaylist/63f9f9b37f4e9cd59bd826f2 b'0/false'
+
+
+
+---- MQTT - Received message ---
+	playPlaylist/63f9f9b37f4e9cd59bd826f2 b'0/true'
+	status_player: 0
+	current_playlist: 
+	playlist_msg: 0
+	 --- playing_button ---
+
+### in run_playlist() ###
+	command: mpg123 /home/pi/sounds/button1/640dbd581a85a932b10dd7d4
+
+### in run_playlist() ###
+	playing
+
+
+
+---- MQTT - Received message ---
+	playPlaylist/63f9f9b37f4e9cd59bd826f2 b'0/false'
+		 --- pausing ---
+
+### in run_playlist() ###
+	sending s
+
+
+
+
+----------------------2023-03-17 13:40:04.543494----------------------
+
+
+
+---- MQTT - Received message ---
+	playPlaylist/63f9f9b37f4e9cd59bd826f2 b'0/true'
+	status_player: 0
+	current_playlist: 
+	playlist_msg: 0
+	 --- playing_button ---
+
+### in run_playlist() ###
+	command: mpg123 /home/pi/sounds/button1/640dbd561a85a932b10dd7ca
+
+
+
+---- MQTT - Received message ---
+	playPlaylist/63f9f9b37f4e9cd59bd826f2 b'0/false'
+		 --- pausing ---
+
+### in run_playlist() ###
+	sending s
+
+
+
+
+----------------------2023-03-17 13:40:20.270290----------------------
+
+
+
+
+
+----------------------2023-03-17 13:40:26.474443----------------------
+
+
+
+---- MQTT - Received message ---
+	playPlaylist/63f9f9b37f4e9cd59bd826f2 b'0/true'
+	status_player: 0
+	current_playlist: 
+	playlist_msg: 0
+	 --- playing_button ---
+
+### in run_playlist() ###
+	command: mpg123 /home/pi/sounds/button1/640dbd541a85a932b10dd7c8
+
+
+
+---- MQTT - Received message ---
+	playPlaylist/63f9f9b37f4e9cd59bd826f2 b'0/false'
+		 --- pausing ---
+
+### in run_playlist() ###
+	sending s
+
+
+
+
+----------------------2023-03-17 13:41:14.029319----------------------
+
+
+
+---- MQTT - Received message ---
+	playPlaylist/63f9f9b37f4e9cd59bd826f2 b'0/true'
+	status_player: 0
+	current_playlist: 
+	playlist_msg: 0
+	 --- playing_button ---
+
+### in run_playlist() ###
+	command: mpg123 /home/pi/sounds/button1/640dbd561a85a932b10dd7cc
+
+### in run_playlist() ###
+	playing
+
+
+
+---- MQTT - Received message ---
+	playPlaylist/63f9f9b37f4e9cd59bd826f2 b'0/false'
+		 --- pausing ---
+
+### in run_playlist() ###
+	sending s
+
+
+
+
+----------------------2023-03-17 13:41:48.216558----------------------
+
+
+
+---- MQTT - Received message ---
+	playPlaylist/63f9f9b37f4e9cd59bd826f2 b'0/true'
+	status_player: 0
+	current_playlist: 
+	playlist_msg: 0
+	 --- playing_button ---
+
+### in run_playlist() ###
+	command: mpg123 /home/pi/sounds/button1/640dbd561a85a932b10dd7cc
+
+
+
+---- MQTT - Received message ---
+	playPlaylist/63f9f9b37f4e9cd59bd826f2 b'0/false'
+		 --- pausing ---
+
+### in run_playlist() ###
+	sending s
+
+
+
+
+----------------------2023-03-17 13:49:11.834191----------------------
+
+
+
+---- MQTT - Received message ---
+	playPlaylist/63f9f9b37f4e9cd59bd826f2 b'0/true'
+	status_player: 0
+	current_playlist: 
+	playlist_msg: 0
+	 --- playing_button ---
+
+### in run_playlist() ###
+	command: mpg123 /home/pi/sounds/button1/640dbd581a85a932b10dd7d2
+
+
+
+
+
+----------------------2023-03-17 13:49:42.212715----------------------
+
+
+
+---- MQTT - Received message ---
+	playPlaylist/63f9f9b37f4e9cd59bd826f2 b'0/false'
+
+
+
+---- MQTT - Received message ---
+	playPlaylist/63f9f9b37f4e9cd59bd826f2 b'0/true'
+	status_player: 0
+	current_playlist: 
+	playlist_msg: 0
+	 --- playing_button ---
+
+### in run_playlist() ###
+	command: mpg123 /home/pi/sounds/button1/640dfadd1a85a932b10ddb99
+
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+
+
+
+
+----------------------2023-03-17 13:50:07.656532----------------------
+
+
+
+---- MQTT - Received message ---
+	playPlaylist/63f9f9b37f4e9cd59bd826f2 b'0/true'
+	status_player: 0
+	current_playlist: 
+	playlist_msg: 0
+	 --- playing_button ---
+
+### in run_playlist() ###
+	command: mpg123 /home/pi/sounds/button1/640dbd561a85a932b10dd7cc
+
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+
+
+
+
+----------------------2023-03-17 13:52:47.292327----------------------
+
+
+
+---- MQTT - Received message ---
+	playPlaylist/63f9f9b37f4e9cd59bd826f2 b'0/false'
+
+
+
+---- MQTT - Received message ---
+	playPlaylist/63f9f9b37f4e9cd59bd826f2 b'0/true'
+	status_player: 0
+	current_playlist: 
+	playlist_msg: 0
+	 --- playing_button ---
+
+### in run_playlist() ###
+	command: mpg123 /home/pi/sounds/button1/640dbd561a85a932b10dd7ca
+
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+
+
+
+
+----------------------2023-03-17 13:54:53.427153----------------------
+
+
+
+---- MQTT - Received message ---
+	playPlaylist/63f9f9b37f4e9cd59bd826f2 b'0/false'
+
+
+
+---- MQTT - Received message ---
+	playPlaylist/63f9f9b37f4e9cd59bd826f2 b'0/true'
+	status_player: 0
+	current_playlist: 
+	playlist_msg: 0
+	 --- playing_button ---
+
+### in run_playlist() ###
+	command: mpg123 /home/pi/sounds/button1/640dbd571a85a932b10dd7d0
+
+### in run_playlist() ###
+	playing
+
+
+
+
+
+----------------------2023-03-17 13:55:17.833230----------------------
+
+
+
+---- MQTT - Received message ---
+	playPlaylist/63f9f9b37f4e9cd59bd826f2 b'0/true'
+	status_player: 0
+	current_playlist: 
+	playlist_msg: 0
+	 --- playing_button ---
+
+### in run_playlist() ###
+	command: mpg123 /home/pi/sounds/button1/640dbd561a85a932b10dd7ca
+
+
+
+
+
+----------------------2023-03-17 13:55:55.579540----------------------
+
+
+
+---- MQTT - Received message ---
+	playPlaylist/63f9f9b37f4e9cd59bd826f2 b'0/false'
+
+
+
+---- MQTT - Received message ---
+	playPlaylist/63f9f9b37f4e9cd59bd826f2 b'0/true'
+	status_player: 0
+	current_playlist: 
+	playlist_msg: 0
+	 --- playing_button ---
+
+### in run_playlist() ###
+	command: mpg123 /home/pi/sounds/button1/640dbd581a85a932b10dd7d6
+
+
+
+---- MQTT - Received message ---
+	playPlaylist/63f9f9b37f4e9cd59bd826f2 b'0/false'
+		 --- pausing ---
+
+### in run_playlist() ###
+	sending s
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+
+
+
+
+----------------------2023-03-17 13:58:05.247909----------------------
+
+
+
+---- MQTT - Received message ---
+	playPlaylist/63f9f9b37f4e9cd59bd826f2 b'0/true'
+	status_player: 0
+	current_playlist: 
+	playlist_msg: 0
+	 --- playing_button ---
+
+### in run_playlist() ###
+	command: mpg123 /home/pi/sounds/button1/640dbd571a85a932b10dd7ce
+
+
+
+---- MQTT - Received message ---
+	playPlaylist/63f9f9b37f4e9cd59bd826f2 b'0/false'
+		 --- pausing ---
+
+### in run_playlist() ###
+	sending s
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+
+
+---- MQTT - Received message ---
+	playPlaylist/63f9f9b37f4e9cd59bd826f2 b'0/true'
+	status_player: 2
+	current_playlist: 0
+	playlist_msg: 0
+		 --- play ---
+
+### in run_playlist() ###
+	sending s
+### in run_playlist() ###
+	playing
+
+
+
+---- MQTT - Received message ---
+	playPlaylist/63f9f9b37f4e9cd59bd826f2 b'0/false'
+		 --- pausing ---
+
+### in run_playlist() ###
+	sending s
+### in run_playlist() ###
+	playing
+
+
+
+---- MQTT - Received message ---
+	playPlaylist/63f9f9b37f4e9cd59bd826f2 b'0/true'
+	status_player: 2
+	current_playlist: 0
+	playlist_msg: 0
+		 --- play ---
+
+### in run_playlist() ###
+	sending s
+
+
+---- MQTT - Received message ---
+	playPlaylist/63f9f9b37f4e9cd59bd826f2 b'0/false'
+		 --- pausing ---
+
+### in run_playlist() ###
+	sending s
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+
+
+---- MQTT - Received message ---
+	playPlaylist/63f9f9b37f4e9cd59bd826f2 b'1/true'
+	status_player: 2
+	current_playlist: 0
+	playlist_msg: 1
+	 --- playing_button ---
+
+### in run_playlist() ###
+	command: mpg123 /home/pi/sounds/button2/6410f26482cb4f9dafb97de0
+
+### in run_playlist() ###
+	playing
+
+
+
+---- MQTT - Received message ---
+	playPlaylist/63f9f9b37f4e9cd59bd826f2 b'0/false'
+		 --- pausing ---
+
+### in run_playlist() ###
+	sending s
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+
+
+---- MQTT - Received message ---
+	playPlaylist/63f9f9b37f4e9cd59bd826f2 b'0/true'
+	status_player: 2
+	current_playlist: 1
+	playlist_msg: 0
+	 --- playing_button ---
+
+### in run_playlist() ###
+	command: mpg123 /home/pi/sounds/button1/640dbd561a85a932b10dd7cc
+
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+
+
+---- MQTT - Received message ---
+	playPlaylist/63f9f9b37f4e9cd59bd826f2 b'0/false'
+		 --- pausing ---
+
+### in run_playlist() ###
+	sending s
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+
+
+---- MQTT - Received message ---
+	playPlaylist/63f9f9b37f4e9cd59bd826f2 b'0/true'
+	status_player: 2
+	current_playlist: 0
+	playlist_msg: 0
+		 --- play ---
+
+
+
+---- MQTT - Received message ---
+	playPlaylist/63f9f9b37f4e9cd59bd826f2 b'0/false'
+		 --- pausing ---
+
+
+
+---- MQTT - Received message ---
+	playPlaylist/63f9f9b37f4e9cd59bd826f2 b'1/true'
+	status_player: 2
+	current_playlist: 0
+	playlist_msg: 1
+	 --- playing_button ---
+
+### in run_playlist() ###
+	command: mpg123 /home/pi/sounds/button2/6410f26482cb4f9dafb97de0
+
+
+
+---- MQTT - Received message ---
+	playPlaylist/63f9f9b37f4e9cd59bd826f2 b'1/false'
+		 --- pausing ---
+
+
+
+---- MQTT - Received message ---
+	playPlaylist/63f9f9b37f4e9cd59bd826f2 b'1/true'
+	status_player: 2
+	current_playlist: 1
+	playlist_msg: 1
+		 --- play ---
+
+
+
+---- MQTT - Received message ---
+	playPlaylist/63f9f9b37f4e9cd59bd826f2 b'1/false'
+		 --- pausing ---
+
+
+
+---- MQTT - Received message ---
+	playPlaylist/63f9f9b37f4e9cd59bd826f2 b'1/true'
+	status_player: 2
+	current_playlist: 1
+	playlist_msg: 1
+		 --- play ---
+
+
+
+---- MQTT - Received message ---
+	playPlaylist/63f9f9b37f4e9cd59bd826f2 b'1/false'
+		 --- pausing ---
+
+
+
+---- MQTT - Received message ---
+	playPlaylist/63f9f9b37f4e9cd59bd826f2 b'0/true'
+	status_player: 2
+	current_playlist: 1
+	playlist_msg: 0
+	 --- playing_button ---
+
+### in run_playlist() ###
+	command: mpg123 /home/pi/sounds/button1/640dbd571a85a932b10dd7d0
+
+
+
+---- MQTT - Received message ---
+	playPlaylist/63f9f9b37f4e9cd59bd826f2 b'0/false'
+		 --- pausing ---
+
+
+
+---- MQTT - Received message ---
+	playPlaylist/63f9f9b37f4e9cd59bd826f2 b'0/true'
+	status_player: 2
+	current_playlist: 0
+	playlist_msg: 0
+		 --- play ---
+
+
+
+---- MQTT - Received message ---
+	playPlaylist/63f9f9b37f4e9cd59bd826f2 b'0/false'
+		 --- pausing ---
+
+
+
+---- MQTT - Received message ---
+	playPlaylist/63f9f9b37f4e9cd59bd826f2 b'0/true'
+	status_player: 2
+	current_playlist: 0
+	playlist_msg: 0
+		 --- play ---
+
+
+
+---- MQTT - Received message ---
+	playPlaylist/63f9f9b37f4e9cd59bd826f2 b'1/false'
+		 --- pausing ---
+
+
+
+---- MQTT - Received message ---
+	playPlaylist/63f9f9b37f4e9cd59bd826f2 b'1/true'
+	status_player: 2
+	current_playlist: 0
+	playlist_msg: 1
+	 --- playing_button ---
+
+### in run_playlist() ###
+	command: mpg123 /home/pi/sounds/button2/6410f26482cb4f9dafb97de0
+
+
+
+---- MQTT - Received message ---
+	playPlaylist/63f9f9b37f4e9cd59bd826f2 b'1/false'
+		 --- pausing ---
+
+
+
+---- MQTT - Received message ---
+	playPlaylist/63f9f9b37f4e9cd59bd826f2 b'0/true'
+	status_player: 2
+	current_playlist: 1
+	playlist_msg: 0
+	 --- playing_button ---
+
+### in run_playlist() ###
+	command: mpg123 /home/pi/sounds/button1/640dbd581a85a932b10dd7d6
+
+
+
+---- MQTT - Received message ---
+	playPlaylist/63f9f9b37f4e9cd59bd826f2 b'0/false'
+		 --- pausing ---
+
+### in run_playlist() ###
+	playing
+
+
+
+---- MQTT - Received message ---
+	playPlaylist/63f9f9b37f4e9cd59bd826f2 b'1/true'
+	status_player: 2
+	current_playlist: 0
+	playlist_msg: 1
+	 --- playing_button ---
+
+### in run_playlist() ###
+	command: mpg123 /home/pi/sounds/button2/6410f26482cb4f9dafb97de0
+
+
+
+---- MQTT - Received message ---
+	playPlaylist/63f9f9b37f4e9cd59bd826f2 b'1/false'
+		 --- pausing ---
+
+
+
+---- MQTT - Received message ---
+	playPlaylist/63f9f9b37f4e9cd59bd826f2 b'1/true'
+	status_player: 2
+	current_playlist: 1
+	playlist_msg: 1
+		 --- play ---
+
+
+
+---- MQTT - Received message ---
+	playPlaylist/63f9f9b37f4e9cd59bd826f2 b'1/false'
+		 --- pausing ---
+
+
+
+
+
+----------------------2023-03-17 14:04:10.903188----------------------
+
+
+
+---- MQTT - Received message ---
+	playPlaylist/63f9f9b37f4e9cd59bd826f2 b'0/true'
+	status_player: 0
+	current_playlist: 
+	playlist_msg: 0
+	 --- playing_button ---
+
+### in run_playlist() ###
+	command: mpg123 /home/pi/sounds/button1/640dbd571a85a932b10dd7d0
+
+
+
+---- MQTT - Received message ---
+	playPlaylist/63f9f9b37f4e9cd59bd826f2 b'0/false'
+		 --- pausing ---
+
+### in run_playlist() ###
+	sending s
+### in run_playlist() ###
+	playing
+
+
+
+---- MQTT - Received message ---
+	playPlaylist/63f9f9b37f4e9cd59bd826f2 b'0/true'
+	status_player: 2
+	current_playlist: 0
+	playlist_msg: 0
+		 --- play ---
+
+### in run_playlist() ###
+	sending s
+
+
+---- MQTT - Received message ---
+	playPlaylist/63f9f9b37f4e9cd59bd826f2 b'0/false'
+		 --- pausing ---
+
+### in run_playlist() ###
+	sending s
+### in run_playlist() ###
+	playing
+
+
+
+---- MQTT - Received message ---
+	playPlaylist/63f9f9b37f4e9cd59bd826f2 b'0/true'
+	status_player: 2
+	current_playlist: 0
+	playlist_msg: 0
+		 --- play ---
+
+### in run_playlist() ###
+	sending s
+
+
+---- MQTT - Received message ---
+	playPlaylist/63f9f9b37f4e9cd59bd826f2 b'0/false'
+		 --- pausing ---
+
+### in run_playlist() ###
+	sending s
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+
+
+
+
+----------------------2023-03-17 14:05:56.730254----------------------
+
+
+
+---- MQTT - Received message ---
+	playPlaylist/63f9f9b37f4e9cd59bd826f2 b'0/true'
+	status_player: 0
+	current_playlist: 
+	playlist_msg: 0
+	 --- playing_button ---
+
+### in run_playlist() ###
+	command: mpg123 /home/pi/sounds/button1/640dbd541a85a932b10dd7c8
+
+
+
+---- MQTT - Received message ---
+	playPlaylist/63f9f9b37f4e9cd59bd826f2 b'0/false'
+		 --- pausing ---
+
+### in run_playlist() ###
+	sending s
+
+
+---- MQTT - Received message ---
+	playPlaylist/63f9f9b37f4e9cd59bd826f2 b'0/true'
+	status_player: 2
+	current_playlist: 0
+	playlist_msg: 0
+		 --- play ---
+
+### in run_playlist() ###
+	sending s
+### in run_playlist() ###
+	playing
+
+
+
+---- MQTT - Received message ---
+	playPlaylist/63f9f9b37f4e9cd59bd826f2 b'0/false'
+		 --- pausing ---
+
+### in run_playlist() ###
+	sending s
+
+
+---- MQTT - Received message ---
+	playPlaylist/63f9f9b37f4e9cd59bd826f2 b'0/true'
+	status_player: 2
+	current_playlist: 0
+	playlist_msg: 0
+		 --- play ---
+
+### in run_playlist() ###
+	sending s
+
+
+---- MQTT - Received message ---
+	playPlaylist/63f9f9b37f4e9cd59bd826f2 b'0/false'
+		 --- pausing ---
+
+### in run_playlist() ###
+	sending s
+### in run_playlist() ###
+	playing
+
+
+
+---- MQTT - Received message ---
+	playPlaylist/63f9f9b37f4e9cd59bd826f2 b'1/true'
+	status_player: 2
+	current_playlist: 0
+	playlist_msg: 1
+	 --- playing_button ---
+
+### in run_playlist() ###
+	command: mpg123 /home/pi/sounds/button2/6410f26482cb4f9dafb97de0
+
+
+
+---- MQTT - Received message ---
+	playPlaylist/63f9f9b37f4e9cd59bd826f2 b'1/false'
+		 --- pausing ---
+
+### in run_playlist() ###
+	sending s
+
+
+---- MQTT - Received message ---
+	playPlaylist/63f9f9b37f4e9cd59bd826f2 b'1/true'
+	status_player: 2
+	current_playlist: 1
+	playlist_msg: 1
+		 --- play ---
+
+### in run_playlist() ###
+	sending s
+### in run_playlist() ###
+	playing
+
+
+
+---- MQTT - Received message ---
+	playPlaylist/63f9f9b37f4e9cd59bd826f2 b'1/false'
+		 --- pausing ---
+
+### in run_playlist() ###
+	sending s
+
+
+---- MQTT - Received message ---
+	playPlaylist/63f9f9b37f4e9cd59bd826f2 b'0/true'
+	status_player: 2
+	current_playlist: 1
+	playlist_msg: 0
+	 --- playing_button ---
+
+### in run_playlist() ###
+	command: mpg123 /home/pi/sounds/button1/640dbd581a85a932b10dd7d2
+
+
+
+---- MQTT - Received message ---
+	playPlaylist/63f9f9b37f4e9cd59bd826f2 b'0/false'
+		 --- pausing ---
+
+### in run_playlist() ###
+	sending s
+
+
+
+
+----------------------2023-03-17 14:08:10.316086----------------------
+
+
+
+---- MQTT - Received message ---
+	playPlaylist/63f9f9b37f4e9cd59bd826f2 b'0/true'
+	status_player: 0
+	current_playlist: 
+	playlist_msg: 0
+	 --- playing_button ---
+
+### in run_playlist() ###
+	command: mpg123 /home/pi/sounds/button1/640dbd561a85a932b10dd7cc
+
+
+
+---- MQTT - Received message ---
+	playPlaylist/63f9f9b37f4e9cd59bd826f2 b'0/true'
+	status_player: 1
+	current_playlist: 0
+	playlist_msg: 0
+
+
+
+---- MQTT - Received message ---
+	playPlaylist/63f9f9b37f4e9cd59bd826f2 b'0/false'
+		 --- pausing ---
+
+### in run_playlist() ###
+	sending s
+
+
+---- MQTT - Received message ---
+	playPlaylist/63f9f9b37f4e9cd59bd826f2 b'0/true'
+	status_player: 2
+	current_playlist: 0
+	playlist_msg: 0
+		 --- play ---
+
+### in run_playlist() ###
+	sending s
+
+
+---- MQTT - Received message ---
+	playPlaylist/63f9f9b37f4e9cd59bd826f2 b'0/false'
+		 --- pausing ---
+
+### in run_playlist() ###
+	sending s
+### in run_playlist() ###
+	playing
+
+
+
+---- MQTT - Received message ---
+	playPlaylist/63f9f9b37f4e9cd59bd826f2 b'1/true'
+	status_player: 2
+	current_playlist: 0
+	playlist_msg: 1
+	 --- playing_button ---
+
+### in run_playlist() ###
+	command: mpg123 /home/pi/sounds/button2/6410f26482cb4f9dafb97de0
+
+
+
+---- MQTT - Received message ---
+	playPlaylist/63f9f9b37f4e9cd59bd826f2 b'1/false'
+		 --- pausing ---
+
+### in run_playlist() ###
+	sending s
+
+
+---- MQTT - Received message ---
+	playPlaylist/63f9f9b37f4e9cd59bd826f2 b'0/true'
+	status_player: 2
+	current_playlist: 1
+	playlist_msg: 0
+	 --- playing_button ---
+
+### in run_playlist() ###
+	command: mpg123 /home/pi/sounds/button1/640dbd581a85a932b10dd7d6
+
+
+
+---- MQTT - Received message ---
+	playPlaylist/63f9f9b37f4e9cd59bd826f2 b'0/false'
+		 --- pausing ---
+
+### in run_playlist() ###
+	sending s
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+
+
+
+
+----------------------2023-03-17 14:12:18.124509----------------------
+
+
+
+---- MQTT - Received message ---
+	playPlaylist/63f9f9b37f4e9cd59bd826f2 b'0/true'
+	status_player: 0
+	current_playlist: 
+	playlist_msg: 0
+	 --- playing_button ---
+
+### in run_playlist() ###
+	command: mpg123 /home/pi/sounds/button1/640dbd581a85a932b10dd7d8
+
+
+
+---- MQTT - Received message ---
+	playPlaylist/63f9f9b37f4e9cd59bd826f2 b'0/false'
+		 --- pausing ---
+
+### in run_playlist() ###
+	sending s
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	sending s
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	sending s
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	sending s
+### in run_playlist() ###
+	sending s
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+
+
+
+
+----------------------2023-03-17 14:23:50.107713----------------------
+
+
+
+---- MQTT - Received message ---
+	playPlaylist/63f9f9b37f4e9cd59bd826f2 b'0/true'
+	status_player: 0
+	current_playlist: 
+	playlist_msg: 0
+	 --- playing_button ---
+
+### in run_playlist() ###
+	command: mpg123 /home/pi/sounds/button1/640dbd571a85a932b10dd7ce
+
+
+
+---- MQTT - Received message ---
+	playPlaylist/63f9f9b37f4e9cd59bd826f2 b'0/false'
+		 --- pausing ---
+
+### in run_playlist() ###
+	sending s
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+
+
+
+
+----------------------2023-03-17 14:28:09.104093----------------------
+
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+
+
+
+
+----------------------2023-03-17 14:31:10.565264----------------------
+
+
+
+
+
+----------------------2023-03-17 14:33:43.778972----------------------
+
+
+
+---- MQTT - Received message ---
+	playPlaylist/63f9f9b37f4e9cd59bd826f2 b'0/true'
+	status_player: 0
+	current_playlist: 
+	playlist_msg: 0
+	 --- playing_button ---
+
+### in run_playlist() ###
+	command: mpg123 /home/pi/sounds/button1/640dbd541a85a932b10dd7c8
+
+
+
+---- MQTT - Received message ---
+	playPlaylist/63f9f9b37f4e9cd59bd826f2 b'0/false'
+		 --- pausing ---
+
+### in run_playlist() ###
+	sending s
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+                                    
+
+
+
+
+----------------------2023-03-17 14:38:12.186039----------------------
+
+
+
+
+
+----------------------2023-03-28 14:20:12.426627----------------------
+
+
+
+---- MQTT - Received message ---
+	playPlaylist/63f9f9b37f4e9cd59bd826f2 b'0/true'
+	status_player: 0
+	current_playlist: 
+	playlist_msg: 0
+	 --- playing_button ---
+
+### in run_playlist() ###
+	command: mpg123 /home/pi/sounds/button1/640dfadd1a85a932b10ddb99
+
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+
+
+---- MQTT - Received message ---
+	playPlaylist/63f9f9b37f4e9cd59bd826f2 b'0/false'
+		 --- pausing ---
+
+### in run_playlist() ###
+	sending s
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+
+
+---- MQTT - Received message ---
+	playPlaylist/63f9f9b37f4e9cd59bd826f2 b'0/true'
+	status_player: 2
+	current_playlist: 0
+	playlist_msg: 0
+		 --- play ---
+
+### in run_playlist() ###
+	sending s
+### in run_playlist() ###
+	playing
+
+
+
+---- MQTT - Received message ---
+	playPlaylist/63f9f9b37f4e9cd59bd826f2 b'0/false'
+		 --- pausing ---
+
+### in run_playlist() ###
+	sending s
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+
+
+---- MQTT - Received message ---
+	playPlaylist/63f9f9b37f4e9cd59bd826f2 b'0/true'
+	status_player: 2
+	current_playlist: 0
+	playlist_msg: 0
+		 --- play ---
+
+### in run_playlist() ###
+	sending s
+### in run_playlist() ###
+	playing
+
+
+
+---- MQTT - Received message ---
+	playPlaylist/63f9f9b37f4e9cd59bd826f2 b'0/false'
+		 --- pausing ---
+
+### in run_playlist() ###
+	sending s
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+
+
+---- MQTT - Received message ---
+	randomPlaylist/63f9f9b37f4e9cd59bd826f2 b'0/true'
+
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	sending s
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	sending s
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+	 --- playing_button ---
+### in run_playlist() ###
+	command: mpg123 /home/pi/sounds/button2/6410f26482cb4f9dafb97de0
+
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+
+
+---- MQTT - Received message ---
+	playPlaylist/63f9f9b37f4e9cd59bd826f2 b'0/true'
+	status_player: 1
+	current_playlist: 1
+	playlist_msg: 0
+	 --- playing_button ---
+
+### in run_playlist() ###
+	command: mpg123 /home/pi/sounds/button1/640dbd581a85a932b10dd7d4
+
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+
+
+---- MQTT - Received message ---
+	playPlaylist/63f9f9b37f4e9cd59bd826f2 b'0/false'
+		 --- pausing ---
+
+### in run_playlist() ###
+	sending s
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+
+
+---- MQTT - Received message ---
+	randomPlaylist/63f9f9b37f4e9cd59bd826f2 b'0/true'
+
+### in run_playlist() ###
+	playing
+
+
+
+---- MQTT - Received message ---
+	randomPlaylist/63f9f9b37f4e9cd59bd826f2 b'0/false'
+
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+
+
+---- MQTT - Received message ---
+	playPlaylist/63f9f9b37f4e9cd59bd826f2 b'1/true'
+	status_player: 2
+	current_playlist: 0
+	playlist_msg: 1
+	 --- playing_button ---
+
+### in run_playlist() ###
+	command: mpg123 /home/pi/sounds/button2/6410f26482cb4f9dafb97de0
+
+
+
+---- MQTT - Received message ---
+	playPlaylist/63f9f9b37f4e9cd59bd826f2 b'1/false'
+		 --- pausing ---
+
+### in run_playlist() ###
+	sending s
+### in run_playlist() ###
+	playing
+
+
+
+---- MQTT - Received message ---
+	randomPlaylist/63f9f9b37f4e9cd59bd826f2 b'0/true'
+
+
+
+---- MQTT - Received message ---
+	playPlaylist/63f9f9b37f4e9cd59bd826f2 b'0/true'
+	status_player: 2
+	current_playlist: 1
+	playlist_msg: 0
+	 --- playing_button ---
+
+### in run_playlist() ###
+	command: mpg123 /home/pi/sounds/button1/640dbd581a85a932b10dd7d2
+
+### in run_playlist() ###
+	playing
+
+
+
+---- MQTT - Received message ---
+	playPlaylist/63f9f9b37f4e9cd59bd826f2 b'0/false'
+		 --- pausing ---
+
+### in run_playlist() ###
+	sending s
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+
+
+---- MQTT - Received message ---
+	playPlaylist/63f9f9b37f4e9cd59bd826f2 b'0/true'
+	status_player: 2
+	current_playlist: 0
+	playlist_msg: 0
+		 --- play ---
+### in run_playlist() ###
+	sending s
+
+### in run_playlist() ###
+	playing
+
+
+
+---- MQTT - Received message ---
+	playPlaylist/63f9f9b37f4e9cd59bd826f2 b'0/false'
+		 --- pausing ---
+
+### in run_playlist() ###
+	sending s
+### in run_playlist() ###
+	playing
+
+
+
+---- MQTT - Received message ---
+	playPlaylist/63f9f9b37f4e9cd59bd826f2 b'0/true'
+	status_player: 2
+	current_playlist: 0
+	playlist_msg: 0
+		 --- play ---
+
+### in run_playlist() ###
+	sending s
+### in run_playlist() ###
+	playing
+
+
+
+---- MQTT - Received message ---
+	playPlaylist/63f9f9b37f4e9cd59bd826f2 b'0/false'
+		 --- pausing ---
+
+### in run_playlist() ###
+	sending s
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+                                                                        
+
+
+
+
+----------------------2023-03-28 14:39:17.474434----------------------
+
+
+
+
+
+----------------------2023-04-08 14:01:26.532799----------------------
+
+
+
+
+
+----------------------2023-04-08 14:04:19.269901----------------------
+
+
+
+
+
+----------------------2023-04-08 16:21:23.601836----------------------
+
+
+
+
+
+----------------------2023-04-19 16:00:41.700845----------------------
+
+
+
+
+
+----------------------2023-04-20 08:17:08.516391----------------------
+
+
+
+
+
+----------------------2023-04-21 15:13:16.108761----------------------
+
+
+
+
+
+----------------------2023-04-21 15:17:28.611471----------------------
+
+
+
+
+
+----------------------2023-04-21 15:17:58.952329----------------------
+
+
+
+
+
+----------------------2023-04-21 15:18:10.160456----------------------
+
+
+
+---- MQTT - Received message ---
+	newPlaylist/64429949d35dee5ae5c96997 b'0'
