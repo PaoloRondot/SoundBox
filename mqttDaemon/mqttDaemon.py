@@ -33,6 +33,11 @@ TOPIC_SOUND_P = "newSongInPlaylist/" + IDUSER
 TOPIC_SOUND_DEL = "deleteSong/" + IDUSER
 TOPIC_RANDOM_P = "randomPlaylist/" + IDUSER
 TOPIC_PLAY = "playPlaylist/" + IDUSER
+TOPIC_SITE_CONNECTION = "connectedSB/" + IDUSER + "/check"
+TOPIC_SB_CONNECTION = "connectedSB/" + IDUSER + "/true"
+TOPIC_SB_DISCONNECTION = "disconnectedSB/" + IDUSER + "/true"
+TOPIC_FD_PLAY_SOUND = "songPlayed/" + IDUSER
+# songPlayed/64429949d35dee5ae5c96997
 
 PLAY = 1
 STOP = 0
@@ -164,12 +169,15 @@ def download_sound(id_sound, button):
 
 
 def run_playlist(button, receiver):
-    # dir_list = os.listdir("/home/pi/sounds/" + button)
-    # master, slave = os.openpty()
     playlist_sort = playlist[button]
     if random_bool:
         random.shuffle(playlist_sort)
+
     for song in playlist_sort:
+        receiver.send(song)
+        # client.publish(TOPIC_FD_PLAY_SOUND, song)
+        # client.publish("test", "hello")
+
         file = open("/home/pi/SoundBox/logs.txt", "a")
         file.write("\n### in run_playlist() ###\n")
         command = "mpg123 /home/pi/sounds/" + button + '/' + song
@@ -227,12 +235,13 @@ def run_playlist(button, receiver):
         # os.system(command)
 
 
-def play_button(button):
+def play_button(button, client):
     """Cette fonction joue la musique attribué au bouton cliqué"""
     global receiver
     file = open("/home/pi/SoundBox/logs.txt", "a")
     file.write("\n\t --- playing_button ---")
     file.close()
+    client.publish("test", "paolo")
     process = multiprocessing.Process(target=run_playlist, kwargs={"button":button, "receiver":receiver})
     process.start()
     status_player = PLAY
@@ -289,6 +298,9 @@ def on_connect(client, userdata, flags, rc):
     client.subscribe(TOPIC_SOUND_DEL)
     client.subscribe(TOPIC_RANDOM_P)
     client.subscribe(TOPIC_PLAY)
+    client.subscribe(TOPIC_SITE_CONNECTION)
+
+    client.publish(TOPIC_SB_CONNECTION, "ok")
  
 # The callback for when a PUBLISH message is received from the server.
 def on_message(client, userdata, msg):
@@ -308,8 +320,10 @@ def on_message(client, userdata, msg):
             random_bool = True
         elif str(msg.payload).find("false") != -1:
             random_bool = False
+
     elif msg.topic == TOPIC_PLAYLIST or msg.topic == TOPIC_PLAYLIST_DEL or msg.topic == TOPIC_SOUND_P or msg.topic == TOPIC_SOUND_DEL:
         update_sounds()
+
     elif msg.topic == TOPIC_PLAY:
         if str(msg.payload).find("true") != -1:
             playlist_msg = str(msg.payload)[str(msg.payload).find('\'')+1:str(msg.payload).find('/')]
@@ -323,7 +337,7 @@ def on_message(client, userdata, msg):
                 if status_player == STOP:
                     status_player = PLAY
                     event.clear()
-                    play_button("button" + str(int(playlist_msg)+1))
+                    play_button("button" + str(int(playlist_msg)+1), client)
                     file = open("/home/pi/SoundBox/logs.txt", "a")
                     file.write("\n\t\t --- play_beg ---")
                     file.close()
@@ -341,7 +355,7 @@ def on_message(client, userdata, msg):
                 time.sleep(0.1)
                 event.clear()
                 status_player = PLAY
-                play_button("button" + str(int(playlist_msg)+1))
+                play_button("button" + str(int(playlist_msg)+1), client)
 
 
         elif str(msg.payload).find("false") != -1:
@@ -355,8 +369,10 @@ def on_message(client, userdata, msg):
                 sender.send("pause")
                 # queue.put("pause")
             # event.set()
-    # elif msg.topic == TOPIC_UPDATE_SOUNDS:
-    #     update_sounds()
+
+    elif msg.topic == TOPIC_SITE_CONNECTION:
+        client.publish(TOPIC_SB_CONNECTION, "ok")
+
     file = open("/home/pi/SoundBox/logs.txt", "a")
     file.write("\n")
     file.close()
@@ -365,23 +381,13 @@ engine.say("Connecting to network")
 engine.runAndWait()
 # if __name__ == '__main__':
 update_sounds()
-# play_button("button1")
-# while True:
-#     resp = input("close")
-#     if resp == "1":
-#         event.set()
-#     if resp == "9":
-#         event.clear()
-#         play_button("button1")
-#     if resp == "5":
-#         print("prout")
-# update_pad()
 wait_for_connection()
 client = mqtt.Client(transport='websockets')
 client.tls_set()
 client.on_connect = on_connect
 client.on_message = on_message
 client.username_pw_set(username=MQTT_USERNAME,password=MQTT_PASSWORD)
+client.will_set(TOPIC_SB_DISCONNECTION, "ok")
 client.connect(MQTT_SERVER, MQTT_PORT)
 print(IDUSER)
 # client.loop_forever() #use this line if you don't want to write any further code. It blocks the code forever to check for data
@@ -389,6 +395,10 @@ client.loop_start()  #use this line if you want to write any more code here
 engine.say("Successfully connected")
 engine.runAndWait()
 while True:
+    if sender.poll():
+        comm = sender.recv()
+        if comm is not None:
+            client.publish(TOPIC_FD_PLAY_SOUND, comm)
     time.sleep(0.1)
     button_pressed = False
     button = ""
