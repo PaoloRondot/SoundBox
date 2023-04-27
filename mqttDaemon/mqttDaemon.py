@@ -19,9 +19,13 @@ engine = pyttsx3.init()
 
 # TODO Faire en sorte depuis le service de lancement au boot que l'on ait accès à la variable d'environnement IDUSER
 
+conf_file = open("/home/pi/SoundBox/conffile.json.conf", "r")
+conf = json.load(conf_file)
+
 # IDUSER = os.environ['IDUSER']
-IDUSER = "64429949d35dee5ae5c96997"
- 
+# IDUSER = "64429949d35dee5ae5c96997"
+IDUSER = conf["IDUSER"]
+
 MQTT_SERVER = "hairdresser.cloudmqtt.com" #specify the broker address, it can be IP of raspberry pi or simply localhost
 MQTT_PORT = 35759
 MQTT_USERNAME = "pcveijdg"

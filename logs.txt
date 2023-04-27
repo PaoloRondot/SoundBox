@@ -5571,3 +5571,248 @@ command: mpg123 /home/pi/sounds/button1/640dbd561a85a932b10dd7ca
 
 
 ----------------------2023-04-23 15:18:56.252020----------------------
+
+
+
+
+
+----------------------2023-04-23 15:17:08.212738----------------------
+
+
+
+
+
+----------------------2023-04-26 11:51:56.376365----------------------
+
+
+
+
+
+----------------------2023-04-26 12:05:11.104857----------------------
+
+
+
+
+
+----------------------2023-04-26 12:13:11.591089----------------------
+
+
+
+
+
+----------------------2023-04-26 12:16:07.778370----------------------
+
+
+
+
+
+----------------------2023-04-26 12:22:30.743812----------------------
+
+
+
+
+
+----------------------2023-04-27 14:21:19.354635----------------------
+
+
+
+
+
+----------------------2023-04-27 14:25:21.286579----------------------
+
+
+
+
+
+----------------------2023-04-27 14:29:01.700596----------------------
+
+
+
+---- MQTT - Received message ---
+	connectedSB/644a77f36535c1d49e1bac3f/check b'ok'
+
+
+
+
+
+----------------------2023-04-27 14:32:20.457336----------------------
+
+
+
+---- MQTT - Received message ---
+	playPlaylist/644a77f36535c1d49e1bac3f b'0/true'
+	status_player: 0
+	current_playlist: 
+	playlist_msg: 0
+	 --- playing_button ---
+
+### in run_playlist() ###
+	command: mpg123 /home/pi/sounds/button1/644a78406535c1d49e1bac5f
+
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+
+
+---- MQTT - Received message ---
+	playPlaylist/644a77f36535c1d49e1bac3f b'0/false'
+		 --- pausing ---
+
+### in run_playlist() ###
+	sending s
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+
+
+---- MQTT - Received message ---
+	playPlaylist/644a77f36535c1d49e1bac3f b'0/true'
+	status_player: 2
+	current_playlist: 0
+	playlist_msg: 0
+		 --- play ---
+### in run_playlist() ###
+	sending s
+
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+
+
+---- MQTT - Received message ---
+	playPlaylist/644a77f36535c1d49e1bac3f b'0/false'
+		 --- pausing ---
+
+### in run_playlist() ###
+	sending s
+### in run_playlist() ###
+	playing
+
+
+
+---- MQTT - Received message ---
+	randomPlaylist/644a77f36535c1d49e1bac3f b'0/true'
+
+
+
+---- MQTT - Received message ---
+	randomPlaylist/644a77f36535c1d49e1bac3f b'0/false'
+
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+
+
+---- MQTT - Received message ---
+	newPlaylist/644a77f36535c1d49e1bac3f b'1'
+### in run_playlist() ###
+	playing
+
+
+
+
+---- MQTT - Received message ---
+	connectedSB/644a77f36535c1d49e1bac3f/check b'ok'
+
+
+
+---- MQTT - Received message ---
+	playPlaylist/644a77f36535c1d49e1bac3f b'1/true'
+	status_player: 2
+	current_playlist: 0
+	playlist_msg: 1
+	 --- playing_button ---
+
+### in run_playlist() ###
+	command: mpg123 /home/pi/sounds/button2/644a79c86535c1d49e1baca5
+
+
+
+---- MQTT - Received message ---
+	playPlaylist/644a77f36535c1d49e1bac3f b'1/false'
+		 --- pausing ---
+
+### in run_playlist() ###
+	sending s
+### in run_playlist() ###
+	playing
+
+
+
+---- MQTT - Received message ---
+	playPlaylist/644a77f36535c1d49e1bac3f b'0/true'
+	status_player: 2
+	current_playlist: 1
+	playlist_msg: 0
+	 --- playing_button ---
+
+### in run_playlist() ###
+	command: mpg123 /home/pi/sounds/button1/644a78416535c1d49e1bac63
+
+
+
+---- MQTT - Received message ---
+	playPlaylist/644a77f36535c1d49e1bac3f b'0/false'
+		 --- pausing ---
+
+### in run_playlist() ###
+	sending s
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
+
+### in run_playlist() ###
+	playing
