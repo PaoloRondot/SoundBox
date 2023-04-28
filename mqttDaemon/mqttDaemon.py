@@ -42,6 +42,7 @@ TOPIC_SB_CONNECTION = "connectedSB/" + IDUSER + "/true"
 TOPIC_SB_DISCONNECTION = "disconnectedSB/" + IDUSER + "/true"
 TOPIC_FD_PLAY_SOUND = "songPlayed/" + IDUSER
 TOPIC_FD_WARNING = "notification/" + IDUSER + "/warning"
+TOPIC_FD_PLAY_PAUSE = "playPlaylist/" + IDUSER
 # songPlayed/64429949d35dee5ae5c96997
 
 PLAY = 1
@@ -343,6 +344,7 @@ def on_message(client, userdata, msg):
             if current_playlist == playlist_msg:
                 if status_player == STOP:
                     status_player = PLAY
+                    client.publish(TOPIC_FD_PLAY_PAUSE, current_playlist + '/true')
                     event.clear()
                     play_button("button" + str(int(playlist_msg)+1), client)
                     file = open("/home/pi/SoundBox/logs.txt", "a")
@@ -350,6 +352,7 @@ def on_message(client, userdata, msg):
                     file.close()
                 elif status_player == PAUSE:
                     status_player = PLAY
+                    client.publish(TOPIC_FD_PLAY_PAUSE, current_playlist + '/true')
                     sender.send("play")
                     file = open("/home/pi/SoundBox/logs.txt", "a")
                     file.write("\n\t\t --- play ---")
@@ -362,12 +365,14 @@ def on_message(client, userdata, msg):
                 time.sleep(0.1)
                 event.clear()
                 status_player = PLAY
+                client.publish(TOPIC_FD_PLAY_PAUSE, current_playlist + '/true')
                 play_button("button" + str(int(playlist_msg)+1), client)
 
 
         elif str(msg.payload).find("false") != -1:
             print("status_player: " + str(status_player))
             if status_player == PLAY:
+                client.publish(TOPIC_FD_PLAY_PAUSE, current_playlist + '/false')
                 status_player = PAUSE
                 file = open("/home/pi/SoundBox/logs.txt", "a")
                 file.write("\n\t\t --- pausing ---")
@@ -440,7 +445,7 @@ while True:
             if status_player == STOP:
                 status_player = PLAY
                 event.clear()
-                play_button("button" + str(int(button)+1))
+                play_button("button" + str(int(button)+1), client)
 
             elif status_player == PAUSE:
                 status_player = PLAY
@@ -459,4 +464,4 @@ while True:
             time.sleep(0.1)
             event.clear()
             status_player = PLAY
-            play_button("button" + str(int(button)+1))
+            play_button("button" + str(int(button)+1), client)
