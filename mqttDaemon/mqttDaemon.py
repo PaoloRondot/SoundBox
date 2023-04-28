@@ -318,7 +318,7 @@ def on_message(client, userdata, msg):
     global random_bool
 
     print(msg.topic+" "+str(msg.payload))
-    client.publish(TOPIC_FD_PLAY_PAUSE, "test")
+    # client.publish(TOPIC_FD_PLAY_PAUSE, "test")
 
     file = open("/home/pi/SoundBox/logs.txt", "a")
     file.write("\n\n\n---- MQTT - Received message ---\n\t" + msg.topic+" "+str(msg.payload))
