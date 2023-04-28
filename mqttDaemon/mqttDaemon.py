@@ -113,7 +113,8 @@ def update_sounds(client):
 
     wait_for_connection()
     print("update sound")
-    client.publish(TOPIC_FD_WARNING, "Preset se synchronise")
+    if client is not None:
+        client.publish(TOPIC_FD_WARNING, "Preset se synchronise")
     # Fetch all sound ids
     url = URL_COMMUN + "songBoard/getSongBoard/" + IDUSER
 
@@ -386,7 +387,7 @@ def on_message(client, userdata, msg):
 engine.say("Connecting to network")
 engine.runAndWait()
 # if __name__ == '__main__':
-update_sounds()
+update_sounds(None)
 wait_for_connection()
 client = mqtt.Client(transport='websockets')
 client.tls_set()
