@@ -318,6 +318,7 @@ def on_message(client, userdata, msg):
     global random_bool
 
     print(msg.topic+" "+str(msg.payload))
+    client.publish(TOPIC_FD_PLAY_PAUSE, "test")
 
     file = open("/home/pi/SoundBox/logs.txt", "a")
     file.write("\n\n\n---- MQTT - Received message ---\n\t" + msg.topic+" "+str(msg.payload))
@@ -344,7 +345,7 @@ def on_message(client, userdata, msg):
             if current_playlist == playlist_msg:
                 if status_player == STOP:
                     status_player = PLAY
-                    client.publish(TOPIC_FD_PLAY_PAUSE, current_playlist + '/true')
+                    client.publish(TOPIC_FD_PLAY_PAUSE, str(current_playlist) + '/true')
                     event.clear()
                     play_button("button" + str(int(playlist_msg)+1), client)
                     file = open("/home/pi/SoundBox/logs.txt", "a")
@@ -352,7 +353,7 @@ def on_message(client, userdata, msg):
                     file.close()
                 elif status_player == PAUSE:
                     status_player = PLAY
-                    client.publish(TOPIC_FD_PLAY_PAUSE, current_playlist + '/true')
+                    client.publish(TOPIC_FD_PLAY_PAUSE, str(current_playlist) + '/true')
                     sender.send("play")
                     file = open("/home/pi/SoundBox/logs.txt", "a")
                     file.write("\n\t\t --- play ---")
@@ -365,14 +366,14 @@ def on_message(client, userdata, msg):
                 time.sleep(0.1)
                 event.clear()
                 status_player = PLAY
-                client.publish(TOPIC_FD_PLAY_PAUSE, current_playlist + '/true')
+                client.publish(TOPIC_FD_PLAY_PAUSE, str(current_playlist) + '/true')
                 play_button("button" + str(int(playlist_msg)+1), client)
 
 
         elif str(msg.payload).find("false") != -1:
             print("status_player: " + str(status_player))
             if status_player == PLAY:
-                client.publish(TOPIC_FD_PLAY_PAUSE, current_playlist + '/false')
+                client.publish(TOPIC_FD_PLAY_PAUSE, str(current_playlist) + '/false')
                 status_player = PAUSE
                 file = open("/home/pi/SoundBox/logs.txt", "a")
                 file.write("\n\t\t --- pausing ---")
