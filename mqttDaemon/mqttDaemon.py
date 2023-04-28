@@ -41,6 +41,7 @@ TOPIC_SITE_CONNECTION = "connectedSB/" + IDUSER + "/check"
 TOPIC_SB_CONNECTION = "connectedSB/" + IDUSER + "/true"
 TOPIC_SB_DISCONNECTION = "disconnectedSB/" + IDUSER + "/true"
 TOPIC_FD_PLAY_SOUND = "songPlayed/" + IDUSER
+TOPIC_FD_WARNING = "notification/" + IDUSER + "/warning"
 # songPlayed/64429949d35dee5ae5c96997
 
 PLAY = 1
@@ -57,7 +58,7 @@ current_playlist = ""
 URL_COMMUN = "https://preset.herokuapp.com/api/"
 
 playlist = dict()
-random_bool = True
+random_bool = False
 event = multiprocessing.Event()
 queue = multiprocessing.Queue()
 
@@ -106,12 +107,13 @@ def wait_for_connection():
         else:
             pass
 
-def update_sounds():
+def update_sounds(client):
     """Cette fonction permet de télécharger un son s'il est ajouté sur la bibliothèque en ligne
     de l'utilisateur. Il supprime également les sons existant sur la raspberry et pas en ligne"""
 
     wait_for_connection()
     print("update sound")
+    client.publish(TOPIC_FD_WARNING, "Preset se synchronise")
     # Fetch all sound ids
     url = URL_COMMUN + "songBoard/getSongBoard/" + IDUSER
 
@@ -245,7 +247,6 @@ def play_button(button, client):
     file = open("/home/pi/SoundBox/logs.txt", "a")
     file.write("\n\t --- playing_button ---")
     file.close()
-    client.publish("test", "paolo")
     process = multiprocessing.Process(target=run_playlist, kwargs={"button":button, "receiver":receiver})
     process.start()
     status_player = PLAY
@@ -312,6 +313,7 @@ def on_message(client, userdata, msg):
     global status_player
     global current_playlist
     global sender
+    global random_bool
 
     print(msg.topic+" "+str(msg.payload))
 
@@ -326,7 +328,7 @@ def on_message(client, userdata, msg):
             random_bool = False
 
     elif msg.topic == TOPIC_PLAYLIST or msg.topic == TOPIC_PLAYLIST_DEL or msg.topic == TOPIC_SOUND_P or msg.topic == TOPIC_SOUND_DEL:
-        update_sounds()
+        update_sounds(client)
 
     elif msg.topic == TOPIC_PLAY:
         if str(msg.payload).find("true") != -1:
