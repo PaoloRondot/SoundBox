@@ -56,7 +56,7 @@ current_playlist = ""
 # TOPIC_UPDATE_PAD = "mqtt-updateTable/" + IDUSER
 # TOPIC_UPDATE_SOUNDS = "mqtt-updateSong/" + IDUSER
 # MQTT_PATH = "test_channel_Pao" #this is the name of topic, like temp
-URL_COMMUN = "https://preset.herokuapp.com/api/"
+URL_COMMUN = "https://presetmidi.herokuapp.com/api/"
 
 playlist = dict()
 random_bool = False
