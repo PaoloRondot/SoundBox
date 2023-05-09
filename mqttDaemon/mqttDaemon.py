@@ -164,7 +164,7 @@ def download_sound(id_sound, button):
         print ("Error:", response.status_code)
 
     data = response.json()
-    # print(data)
+    print(data)
     b = base64.b64decode(data[0]["datas"])
     # print(b)
 
