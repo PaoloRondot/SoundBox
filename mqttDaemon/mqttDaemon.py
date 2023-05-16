@@ -411,13 +411,13 @@ client.loop_start()  #use this line if you want to write any more code here
 engine.say("Successfully connected")
 engine.runAndWait()
 while True:
-    print('charles1')
+    # print('charles1')
     if sender.poll():
         comm = sender.recv()
         if comm is not None:
             client.publish(TOPIC_FD_PLAY_SOUND, comm)
     time.sleep(0.1)
-    print("charles")
+    # print("charles")
     button_pressed = False
     button = ""
     while GPIO.input(BOUTON1) :
@@ -462,6 +462,7 @@ while True:
             elif status_player == PLAY:
                 status_player = PAUSE
                 print("pausing")
+                client.publish(TOPIC_FD_PLAY_PAUSE, str(current_playlist) + '/false')
                 sender.send("pause")
                 # queue.put("pause")
         
