@@ -27,9 +27,9 @@ conf = json.load(conf_file)
 IDUSER = conf["IDUSER"]
 
 MQTT_SERVER = "hairdresser.cloudmqtt.com" #specify the broker address, it can be IP of raspberry pi or simply localhost
-MQTT_PORT = 35759
-MQTT_USERNAME = "pcveijdg"
-MQTT_PASSWORD = "QbEEywSkudq5"
+MQTT_PORT = 37670
+MQTT_USERNAME = "knumunby"
+MQTT_PASSWORD = "efG-FmGehi9G"
 
 TOPIC_PLAYLIST = "newPlaylist/" + IDUSER
 TOPIC_PLAYLIST_DEL = "deletePlaylist/" + IDUSER
@@ -42,7 +42,7 @@ TOPIC_SB_CONNECTION = "connectedSB/" + IDUSER + "/true"
 TOPIC_SB_DISCONNECTION = "disconnectedSB/" + IDUSER + "/true"
 TOPIC_FD_PLAY_SOUND = "songPlayed/" + IDUSER
 TOPIC_FD_WARNING = "notification/" + IDUSER + "/warning"
-TOPIC_FD_PLAY_PAUSE = "playPlaylist/" + IDUSER
+TOPIC_FD_PLAY_PAUSE = "songPause/" + IDUSER
 # songPlayed/64429949d35dee5ae5c96997
 
 PLAY = 1
@@ -164,12 +164,13 @@ def download_sound(id_sound, button):
         print ("Error:", response.status_code)
 
     data = response.json()
-    print(data)
-    b = base64.b64decode(data[0]["datas"])
+    # print(data)
+    # b = base64.b64decode(data[0]["datas"])
+    b = base64.b64decode(data["datas"]) 
     # print(b)
 
     songFile = "/home/pi/sounds/" + button + "/" + id_sound
-    print(songFile)
+    # print(songFile)
     # input("wait")
     with open(songFile, 'wb') as output_file:
         output_file.write(b)
@@ -226,6 +227,8 @@ def run_playlist(button, receiver):
             if receiver.poll():
                 comm = receiver.recv()
                 if comm is not None:
+                    if comm == "play":
+                        receiver.send(song)
                     # if item == "pause":
                     file = open("/home/pi/SoundBox/logs.txt", "a")
                     file.write("\n### in run_playlist() ###\n\tsending s")
