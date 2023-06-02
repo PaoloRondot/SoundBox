@@ -10,6 +10,7 @@ import time
 import RPi.GPIO as GPIO
 import datetime
 import pyttsx3
+import pty
 
 engine = pyttsx3.init()
 
@@ -22,7 +23,6 @@ engine = pyttsx3.init()
 conf_file = open("/home/pi/SoundBox/conffile.json.conf", "r")
 conf = json.load(conf_file)
 
-# IDUSER = os.environ['IDUSER']
 # IDUSER = "64429949d35dee5ae5c96997"
 IDUSER = conf["IDUSER"]
 
@@ -64,6 +64,7 @@ event = multiprocessing.Event()
 queue = multiprocessing.Queue()
 
 receiver, sender = multiprocessing.Pipe()
+master, slave = os.openpty()
 
 BOUTON1 = 17
 BOUTON2 = 27
@@ -197,11 +198,13 @@ def run_playlist(button, receiver):
         file.write("\tcommand: " + command + "\n")
         file.close()
         # os.system(command)
-        process = subprocess.Popen(["/usr/bin/mpg123", "-R", song_path], stdout=None, stdin=subprocess.PIPE, stderr=None)
+        # process = subprocess.Popen(["/usr/bin/mpg123", "-R", song_path], stdout=None, stdin=subprocess.PIPE, stderr=None)
         # time.sleep(1.0)
-        process.stdin.write(bytes(command_try, 'utf-8'))
-        process.stdin.flush()
-        # process = subprocess.Popen(["/usr/bin/mpg123", song_path], stdin=master)
+        # process.stdin.write(bytes(command_try, 'utf-8'))
+        # process.stdin.flush()
+        # process = subprocess.Popen(["/usr/bin/mpg123", "-C", song_path], stdout=None, stdin=subprocess.PIPE, stderr=None)
+        # process = subprocess.Popen(["/usr/bin/mpg123", "-C", song_path], stdin=subprocess.PIPE)
+        process = subprocess.Popen(["/usr/bin/mpg123", "-C", song_path], stdout=None, stdin=master, stderr=None)
         # process = subprocess.run(command, capture_output=True, text=True)
         i = 0
         while process.poll() is None:
@@ -234,12 +237,13 @@ def run_playlist(button, receiver):
                     file.write("\n### in run_playlist() ###\n\tsending s")
                     file.close()
                     print("sending s")
-                    process.stdin.write(b"PAUSE\n")
-                    process.stdin.flush()
+                    # process.stdin.write(b"PAUSE\n")
+                    # process.stdin.write(b"s")
+                    # process.stdin.flush()
                     # process.stdin.flush()
                     # process.stdin.write(b"s\n")
                     # process.stdin.flush()
-                    # os.write(slave, b's')
+                    os.write(slave, b's')
                     # process.communicate(input = b's')
         if event.is_set():
             break
